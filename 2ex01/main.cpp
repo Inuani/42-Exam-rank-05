@@ -1,18 +1,37 @@
 #include "Warlock.hpp"
+#include "Dummy.hpp"
+#include "Fwoosh.hpp"
+#include "Polymorph.hpp"
+#include "Fireball.hpp"
+#include "TargetGenerator.hpp"
+#include "BrickWall.hpp"
 
-int main() {
 
-Warlock const richard("Richard", "Mistress of Magma");
+// c++ -std=c++98 -Werror -Wextra -Wall main.cpp Warlock.cpp ASpell.cpp ATarget.cpp Fwoosh.cpp Dummy.cpp Polymorph.cpp Targetgenerator.cpp SpellBook.cpp Fireball.cpp BrickWall.cpp
+
+int main()
+{
+  Warlock richard("Richard", "foo");
+  richard.setTitle("Hello, I'm Richard the Warlock!");
+  BrickWall model1;
+
+  Polymorph* polymorph = new Polymorph();
+  TargetGenerator tarGen;
+
+  tarGen.learnTargetType(&model1);
+  richard.learnSpell(polymorph);
+
+  Fireball* fireball = new Fireball();
+
+  richard.learnSpell(fireball);
+
+  ATarget* wall = tarGen.createTarget("Inconspicuous Red-brick Wall");
+
   richard.introduce();
-  std::cout << richard.getName() << " - " << richard.getTitle() << std::endl;
+  richard.launchSpell("Polymorph", *wall);
+  richard.launchSpell("Fireball", *wall);
 
-  Warlock* jack = new Warlock("Jack", "the Long");
-  jack->introduce();
-  jack->setTitle("the Mighty");
-  jack->introduce();
-
-  delete jack;
-
-  return (0);
-
+  delete polymorph;
+  delete fireball;
+  delete wall;
 }

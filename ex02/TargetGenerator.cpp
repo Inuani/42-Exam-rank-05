@@ -21,7 +21,7 @@ void		TargetGenerator::learnTargetType(const ATarget* target) {
 	
 	if (target) {
 		std::map<std::string, ATarget *>::iterator it = _targets.find(target->getType());
-		if (it != _targets.end())
+		if (it == _targets.end())
 			_targets[target->getType()] = target->clone();
 	}
 }
