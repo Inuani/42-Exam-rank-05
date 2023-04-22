@@ -45,6 +45,5 @@ ASpell*		SpellBook::createSpell(std::string const & spell) {
     if (it != _book.end())
         return it->second->clone();
     return NULL;
-
 }
 

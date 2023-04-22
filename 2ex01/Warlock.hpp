@@ -2,7 +2,6 @@
 #include <map>
 #include "ASpell.hpp"
 #include "ATarget.hpp"
-#include "SpellBook.hpp"
 
 #ifndef WARLOCK_HPP
 # define WARLOCK_HPP
@@ -29,8 +28,7 @@ private:
 std::string _name;
 std::string _title;
 
-// std::map<std::string, ASpell*> _magic;
-SpellBook	_sb;
+std::map<std::string, ASpell*> _magic;
 
 Warlock();
 Warlock(const Warlock& src);
