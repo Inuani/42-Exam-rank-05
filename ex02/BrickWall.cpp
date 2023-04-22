@@ -7,7 +7,7 @@ BrickWall::BrickWall() : ATarget("Inconspicuous Red-brick Wall") {
 BrickWall::~BrickWall() {
 }
 
-BrickWall::BrickWall(const BrickWall& src) {
+BrickWall::BrickWall(const BrickWall& src) : ATarget(src) {
 	*this = src;
 }
 

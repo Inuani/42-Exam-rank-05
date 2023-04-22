@@ -7,7 +7,7 @@ Polymorph::Polymorph() : ASpell("Polymorph", "turned into a critter"){
 Polymorph::~Polymorph() {
 }
 
-Polymorph::Polymorph(const Polymorph& src) {
+Polymorph::Polymorph(const Polymorph& src) : ASpell(src){
 	*this = src;
 }
 

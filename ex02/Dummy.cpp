@@ -7,7 +7,7 @@ Dummy::Dummy() : ATarget("Target Practice Dummy") {
 Dummy::~Dummy() {
 }
 
-Dummy::Dummy(const Dummy& src) {
+Dummy::Dummy(const Dummy& src) : ATarget(src) {
 	*this = src;
 }
 

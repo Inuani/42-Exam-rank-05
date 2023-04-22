@@ -7,7 +7,7 @@ Fireball::Fireball() : ASpell("Fireball", "burnt to a crisp"){
 Fireball::~Fireball() {
 }
 
-Fireball::Fireball(const Fireball& src) {
+Fireball::Fireball(const Fireball& src) : ASpell(src){
 	*this = src;
 }
 

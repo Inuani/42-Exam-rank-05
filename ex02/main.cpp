@@ -6,7 +6,7 @@
 #include "Dummy.hpp"
 
 
-// c++ -std=c++98 -Werror -Wextra -Wall main.cpp Warlock.cpp ASpell.cpp ATarget.cpp Fwoosh.cpp Dummy.cpp Fireball.cpp Brickwall.cpp Polymorph.cpp SpellBook.cpp TargetGenerator.cpp
+// c++ -std=c++98 -Werror -Wextra -Wall main.cpp Warlock.cpp ASpell.cpp ATarget.cpp Fwoosh.cpp Dummy.cpp Fireball.cpp BrickWall.cpp Polymorph.cpp SpellBook.cpp TargetGenerator.cpp
 
 int main()
 {

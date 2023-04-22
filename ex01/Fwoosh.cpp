@@ -8,7 +8,7 @@ Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed"){
 Fwoosh::~Fwoosh() {
 }
 
-Fwoosh::Fwoosh(const Fwoosh& src) {
+Fwoosh::Fwoosh(const Fwoosh& src) : ASpell(src) {
 	*this = src;
 }
 
