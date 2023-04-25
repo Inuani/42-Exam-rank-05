@@ -1,5 +1,5 @@
 # Warlock and Spells Exam: The Chronicles of Magic Mishaps
-Get ready for a magical adventure where you'll learn to create a Warlock class with a SpellBook and a TargetGenerator! Be prepared for an enchanting exercise filled with class design, class relationships, and the mystical art of map containers in C++.
+Get ready for a magical adventure where you'll learn to create a Warlock class with a SpellBook and a TargetGenerator! Be prepared for an exam filled with class design, class relationships, and the mystical art of map containers in C++.
 
 ## Key Concepts (or Magical Ingredients)
 
@@ -22,7 +22,7 @@ Face targets with a type and watch them react to spells with the getHitBySpell m
 Uncover the secrets of Fwoosh, Fireball, Polymorph, Dummy, and BrickWall to create spellbinding magical duels!
 
 ### Map Container
-Unravel the enigmatic map container used by SpellBook and TargetGenerator to store their objects, and harness the magic of find, erase, and insert.
+Unravel the enigmatic map container used by SpellBook and TargetGenerator to store their objects, and harness the magic of find and erase.
 
 ## Magical Takeaways (or Potions of Knowledge)
 - Master the art of canonical form and non-copyable classes (SpellBook and TargetGenerator) to guard your magical secrets.
@@ -32,4 +32,4 @@ Unravel the enigmatic map container used by SpellBook and TargetGenerator to sto
 - Delegate Warlock's learnSpell, forgetSpell, and launchSpell methods to SpellBook like a true magical maestro.
 - Master TargetGenerator to create and manage ATarget objects, turning the tables on your enemies!
 
-Embark on this whimsical coding journey and watch as your Warlock, SpellBook, and TargetGenerator come to life, casting their hilarious magic on the world of C++!
+Embark on this whimsical coding journey and watch as your Warlock, SpellBook, and TargetGenerator come to life, casting their magic on the world of C++!
